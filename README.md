@@ -50,7 +50,7 @@ python3 -m http.server 5500
 
 ## Что настроить перед публикацией
 
-- Контакты в секции `#contact`: e-mail, Telegram, Instagram (сейчас заглушки).
+- Контакт в секции `#contact`: e-mail `ola944725@gmail.com`).
 - Отправка формы: в `js/script.js` (комментарий «Здесь можно отправить данные…»)
   подключите свой обработчик — например, [Formspree](https://formspree.io),
   Telegram-бота или собственный бэкенд.
