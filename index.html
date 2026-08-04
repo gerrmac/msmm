@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MSMM — Смыслы, которые продают. Контент, который работает.</title>
+  <meta name="description" content="СММ, копирайтинг и продвижение брендов в социальных сетях. Пишу тексты, создаю визуал и продвигаю бренды." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo">MSMM</a>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="#about" class="nav__link">Обо мне</a>
+        <a href="#services" class="nav__link">Услуги</a>
+        <a href="#portfolio" class="nav__link">Портфолио</a>
+        <a href="#process" class="nav__link">Этапы работы</a>
+        <a href="#contact" class="nav__link">Контакты</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--pill nav__cta">Связаться</a>
+
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <p class="eyebrow">СММ <span>•</span> Копирайтинг <span>•</span> Продвижение</p>
+          <h1 class="hero__title">MSMM</h1>
+          <p class="hero__lead">Смыслы, которые продают.<br />Контент, который работает.</p>
+          <p class="hero__sub">Пишу тексты, создаю визуал и продвигаю бренды в социальных сетях.</p>
+          <a href="#contact" class="btn btn--primary">
+            Обсудить проект
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
+        </div>
+
+        <div class="hero__visual reveal">
+          <!-- Замените содержимое .hero__photo на реальное фото: <img src="..." alt=""> -->
+          <div class="hero__arch"></div>
+          <div class="hero__photo">
+            <svg class="hero__scene" viewBox="0 0 420 380" role="img" aria-label="Ноутбук и ваза с сухоцветами">
+              <!-- стол -->
+              <rect x="0" y="300" width="420" height="80" fill="#f4e2e0" />
+              <!-- ноутбук -->
+              <g>
+                <rect x="70" y="150" width="200" height="130" rx="8" fill="#e7d3d1" />
+                <rect x="82" y="162" width="176" height="106" rx="4" fill="#cbb4b3" />
+                <rect x="55" y="278" width="230" height="16" rx="8" fill="#d9c4c2" />
+              </g>
+              <!-- ваза -->
+              <path d="M300 210 q-8 40 6 70 h44 q14 -30 6 -70 q-2 -14 -28 -14 q-26 0 -28 14 Z" fill="#e79cae" />
+              <path d="M300 210 q-8 40 6 70 h10 q-10 -34 -4 -70 Z" fill="#f0b6c4" opacity=".6" />
+              <!-- сухоцветы -->
+              <g stroke="#dd8ea0" stroke-width="2" fill="none" stroke-linecap="round">
+                <path d="M328 200 C328 150 320 120 316 96" />
+                <path d="M328 200 C330 150 344 122 356 100" />
+                <path d="M328 200 C326 160 314 140 300 128" />
+                <path d="M328 200 C332 160 348 148 366 138" />
+              </g>
+              <g fill="#eaa7b6">
+                <circle cx="316" cy="96" r="6" /><circle cx="356" cy="100" r="6" />
+                <circle cx="300" cy="128" r="5" /><circle cx="366" cy="138" r="5" />
+                <circle cx="330" cy="84" r="5" /><circle cx="344" cy="112" r="4" />
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <p class="hero__side">Создаю контент, который приносит результат</p>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT / WHY ME ============ -->
+    <section class="about section" id="about">
+      <div class="container">
+        <p class="section__eyebrow">Почему со мной</p>
+        <h2 class="section__title">Результат, эстетика и подход</h2>
+
+        <div class="about__grid">
+          <article class="feature reveal">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 1v3M12 20v3M1 12h3M20 12h3"/></svg>
+            </div>
+            <h3 class="feature__title">Стратегия</h3>
+            <p class="feature__text">Каждый проект начинается с анализа и стратегии, а не с шаблонных решений.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.7A8.5 8.5 0 1 1 21 11.5z"/></svg>
+            </div>
+            <h3 class="feature__title">Смыслы</h3>
+            <p class="feature__text">Пишу тексты, которые не просто красиво звучат, а решают задачи бизнеса.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3 class="feature__title">Эстетика</h3>
+            <p class="feature__text">Визуал, который выделяет и формирует доверие к бренду.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2 0-2.8a2 2 0 0 0-3 0zM12 15l-3-3a13 13 0 0 1 8-8c2.5 0 4 1.5 4 4a13 13 0 0 1-8 8zM9 12H4s.5-2.8 2-4c.8-.7 2-.7 2.8 0M12 15v5s2.8-.5 4-2c.7-.8.7-2 0-2.8"/></svg>
+            </div>
+            <h3 class="feature__title">Результат</h3>
+            <p class="feature__text">Работаю на рост охватов, вовлечённости и реальных результатов.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services section" id="services">
+      <div class="container">
+        <p class="section__eyebrow">Услуги</p>
+        <h2 class="section__title">Что я делаю</h2>
+
+        <div class="services__grid">
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3zM18 13l-1.5-1.5M2 2l7.586 7.586M11 11l2 2M2 2l4 12 3-3 3 3 4-4-3-3 3-3z"/></svg>
+            </div>
+            <h3 class="card__title">Копирайтинг</h3>
+            <p class="card__text">Пишу тексты, которые цепляют и вовлекают: посты, статьи, лендинги, сторис, рассылки.</p>
+            <a href="#contact" class="card__link">Подробнее <span>→</span></a>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="12" cy="12" r="4"/><circle cx="7" cy="7" r="1"/><circle cx="17" cy="17" r="1"/></svg>
+            </div>
+            <h3 class="card__title">Дизайн</h3>
+            <p class="card__text">Создаю стильный и продающий визуал: ленты, сторис, обложки, презентации и другое.</p>
+            <a href="#contact" class="card__link">Подробнее <span>→</span></a>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V9M9 21V5M15 21v-8M21 21V3"/><path d="M3 9l6-4 6 4 6-6"/></svg>
+            </div>
+            <h3 class="card__title">Продвижение</h3>
+            <p class="card__text">Продвигаю аккаунты: стратегия, контент-план, анализ аудитории, реклама, рост охватов.</p>
+            <a href="#contact" class="card__link">Подробнее <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO / NEURAL NETWORKS ============ -->
+    <section class="portfolio section" id="portfolio">
+      <div class="container">
+        <div class="portfolio__head">
+          <h2 class="portfolio__title reveal">
+            <span class="portfolio__title-1">Работаю с</span>
+            <span class="portfolio__title-2">нейросетями
+              <svg class="sparkle" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8z"/></svg>
+            </span>
+          </h2>
+
+          <div class="portfolio__intro reveal">
+            <p class="portfolio__intro-text">Умею генерировать фото и видео под любой дизайн через нейросети:</p>
+            <p class="portfolio__nets">Nano Banana, Sora, Runway, Grok, Google Veo, Kling.</p>
+          </div>
+        </div>
+
+        <div class="portfolio__grid">
+          <figure class="work reveal">
+            <div class="work__img work__img--tarot"><span>Матрица судьбы</span></div>
+            <figcaption>Карточки для проекта «Матрица судьбы»</figcaption>
+          </figure>
+
+          <figure class="work reveal">
+            <div class="work__img work__img--genesis"><span>GENESIS</span></div>
+            <figcaption>Дизайн для постов «GENESIS»</figcaption>
+          </figure>
+
+          <figure class="work reveal">
+            <div class="work__img work__img--baltic"><span>Биосферы Балтики</span></div>
+            <figcaption>Листовки для проекта «Биосферы Балтики»</figcaption>
+          </figure>
+
+          <figure class="work reveal">
+            <div class="work__img work__img--cyber"><span>КИБЕР_СИНДИКАТ</span></div>
+            <figcaption>Карточки для проекта «КИБЕР_СИНДИКАТ»</figcaption>
+          </figure>
+
+          <figure class="work reveal">
+            <div class="work__img work__img--msze"><span>MSZE</span></div>
+            <figcaption>Буклет для магазина «MSZE»</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS / STAGES ============ -->
+    <section class="process section" id="process">
+      <div class="container">
+        <p class="section__eyebrow">Этапы работы</p>
+        <h2 class="section__title">Как строится наша работа</h2>
+
+        <ol class="process__list">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <h3 class="step__title">Знакомство</h3>
+            <p class="step__text">Обсуждаем задачи, цели и ожидания. Изучаю ваш бренд, продукт и аудиторию.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">02</span>
+            <h3 class="step__title">Стратегия</h3>
+            <p class="step__text">Анализ ниши и конкурентов. Формирую концепцию, tone of voice и контент-план.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">03</span>
+            <h3 class="step__title">Реализация</h3>
+            <p class="step__text">Пишу тексты, создаю визуал и оформляю аккаунт в единой эстетике.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">04</span>
+            <h3 class="step__title">Результат</h3>
+            <p class="step__text">Запуск, аналитика и корректировки. Работаем на рост охватов и продаж.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact section" id="contact">
+      <div class="container contact__inner">
+        <div class="contact__info reveal">
+          <p class="section__eyebrow">Контакты</p>
+          <h2 class="section__title section__title--left">Давайте создадим<br />что-то яркое</h2>
+          <p class="contact__lead">Расскажите о вашем проекте — отвечу в течение дня и предложу решение.</p>
+
+          <ul class="contact__list">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4zM4 6l8 6 8-6"/></svg>
+              <a href="mailto:hello@msmm.ru">hello@msmm.ru</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.7A8.5 8.5 0 1 1 21 11.5z"/></svg>
+              <a href="https://t.me/msmm" target="_blank" rel="noopener">@msmm — Telegram</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+              <a href="#" >@msmm — Instagram</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact__form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Как вас зовут</label>
+            <input type="text" id="name" name="name" placeholder="Ваше имя" required />
+          </div>
+          <div class="field">
+            <label for="contactValue">Контакт для связи</label>
+            <input type="text" id="contactValue" name="contact" placeholder="Telegram, e-mail или телефон" required />
+          </div>
+          <div class="field">
+            <label for="message">О проекте</label>
+            <textarea id="message" name="message" rows="4" placeholder="Пара слов о задаче"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">
+            Отправить заявку
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#hero" class="logo logo--light">MSMM</a>
+      <p class="footer__tag">Смыслы, которые продают. Контент, который работает.</p>
+      <nav class="footer__nav" aria-label="Навигация в подвале">
+        <a href="#about">Обо мне</a>
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#process">Этапы работы</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> MSMM. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
