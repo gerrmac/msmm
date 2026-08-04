@@ -117,4 +117,35 @@
   /* ---------- footer year ---------- */
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* ---------- copywriting modal ---------- */
+  const copyModal = document.getElementById("copyModal");
+  const openCopyBtn = document.getElementById("openCopyModal");
+  const closeCopyBtn = document.getElementById("closeCopyModal");
+
+  const openModal = () => {
+    copyModal.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+  };
+  const closeModal = () => {
+    copyModal.classList.remove("is-open");
+    document.body.style.overflow = "";
+  };
+
+  if (openCopyBtn) openCopyBtn.addEventListener("click", openModal);
+  if (closeCopyBtn) closeCopyBtn.addEventListener("click", closeModal);
+
+  // Close modal on overlay click
+  if (copyModal) {
+    copyModal.addEventListener("click", (e) => {
+      if (e.target === copyModal) closeModal();
+    });
+  }
+
+  // Close modal on Escape
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && copyModal && copyModal.classList.contains("is-open")) {
+      closeModal();
+    }
+  });
 })();

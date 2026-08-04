@@ -25,6 +25,7 @@
         <a href="#about" class="nav__link">Обо мне</a>
         <a href="#services" class="nav__link">Услуги</a>
         <a href="#portfolio" class="nav__link">Портфолио</a>
+        <a href="#terezi" class="nav__link">AI-Видео</a>
         <a href="#process" class="nav__link">Этапы работы</a>
         <a href="#contact" class="nav__link">Контакты</a>
       </nav>
@@ -138,13 +139,13 @@
         <h2 class="section__title">Что я делаю</h2>
 
         <div class="services__grid">
-          <article class="card reveal">
+          <article class="card reveal" id="copywritingCard">
             <div class="card__icon">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3zM18 13l-1.5-1.5M2 2l7.586 7.586M11 11l2 2M2 2l4 12 3-3 3 3 4-4-3-3 3-3z"/></svg>
             </div>
             <h3 class="card__title">Копирайтинг</h3>
             <p class="card__text">Пишу тексты, которые цепляют и вовлекают: посты, статьи, лендинги, сторис, рассылки.</p>
-            <a href="#contact" class="card__link">Подробнее <span>→</span></a>
+            <button class="card__link" id="openCopyModal">Подробнее <span>→</span></button>
           </article>
 
           <article class="card reveal">
@@ -168,6 +169,49 @@
       </div>
     </section>
 
+    <!-- ============ COPYWRITING DETAIL MODAL ============ -->
+    <div class="modal-overlay" id="copyModal" role="dialog" aria-modal="true" aria-label="Подробнее о копирайтинге">
+      <div class="modal">
+        <button class="modal__close" id="closeCopyModal" aria-label="Закрыть">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+
+        <div class="modal__body">
+          <div class="modal__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3zM18 13l-1.5-1.5M2 2l7.586 7.586M11 11l2 2M2 2l4 12 3-3 3 3 4-4-3-3 3-3z"/></svg>
+          </div>
+
+          <h3 class="modal__title">Копирайтинг</h3>
+          <p class="modal__subtitle">Смыслы, которые продают</p>
+
+          <div class="modal__cards">
+            <div class="copy-detail">
+              <div class="copy-detail__icon">✍️</div>
+              <h4>Живые тексты</h4>
+              <p>Я делаю живые тексты сама — каждый текст пишется вручную с учётом вашей аудитории, tone of voice и бизнес-целей. Никаких шаблонов, только искренний и продающий копирайтинг.</p>
+            </div>
+
+            <div class="copy-detail">
+              <div class="copy-detail__icon">🤖</div>
+              <h4>AI-ассистенты для правок</h4>
+              <p>Для мелких правок и ускорения рутины использую ChatGPT и DeepSeek — они помогают отшлифовать формулировки, проверить грамматику и предложить альтернативные варианты.</p>
+            </div>
+
+            <div class="copy-detail">
+              <div class="copy-detail__icon">🔍</div>
+              <h4>SEO-анализ</h4>
+              <p>Для SEO-оптимизации текстов использую <strong>text.ru</strong> — проверяю уникальность, водность, заспамленность и другие параметры, чтобы текст работал на продвижение в поиске.</p>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn--primary modal__cta">
+            Заказать текст
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
     <!-- ============ PORTFOLIO / NEURAL NETWORKS ============ -->
     <section class="portfolio section" id="portfolio">
       <div class="container">
@@ -186,30 +230,165 @@
         </div>
 
         <div class="portfolio__grid">
+          <!-- Матрица судьбы: Энергия, Совет, Афирмация -->
           <figure class="work reveal">
-            <div class="work__img work__img--tarot"><span>Матрица судьбы</span></div>
-            <figcaption>Карточки для проекта «Матрица судьбы»</figcaption>
+            <div class="work__img"><img src="images/матрица/энергия.png" alt="Матрица судьбы — Энергия" loading="lazy" /></div>
+            <figcaption>Матрица судьбы — Энергия</figcaption>
           </figure>
 
           <figure class="work reveal">
-            <div class="work__img work__img--genesis"><span>GENESIS</span></div>
+            <div class="work__img"><img src="images/матрица/совет.png" alt="Матрица судьбы — Совет" loading="lazy" /></div>
+            <figcaption>Матрица судьбы — Совет</figcaption>
+          </figure>
+
+          <figure class="work reveal">
+            <div class="work__img"><img src="images/матрица/афирмация.png" alt="Матрица судьбы — Афирмация" loading="lazy" /></div>
+            <figcaption>Матрица судьбы — Афирмация</figcaption>
+          </figure>
+
+          <!-- GENESIS -->
+          <figure class="work reveal">
+            <div class="work__img"><img src="images/genesis/image.png" alt="GENESIS — дизайн 1" loading="lazy" /></div>
             <figcaption>Дизайн для постов «GENESIS»</figcaption>
           </figure>
 
           <figure class="work reveal">
-            <div class="work__img work__img--baltic"><span>Биосферы Балтики</span></div>
+            <div class="work__img"><img src="images/genesis/image copy 13.png" alt="GENESIS — дизайн 2" loading="lazy" /></div>
+            <figcaption>Дизайн для постов «GENESIS»</figcaption>
+          </figure>
+
+          <!-- Биосферы Балтики -->
+          <figure class="work reveal">
+            <div class="work__img"><img src="images/биосфера/image.png" alt="Биосферы Балтики — листовка 1" loading="lazy" /></div>
             <figcaption>Листовки для проекта «Биосферы Балтики»</figcaption>
           </figure>
 
           <figure class="work reveal">
-            <div class="work__img work__img--cyber"><span>КИБЕР_СИНДИКАТ</span></div>
+            <div class="work__img"><img src="images/биосфера/image copy.png" alt="Биосферы Балтики — листовка 2" loading="lazy" /></div>
+            <figcaption>Листовки для проекта «Биосферы Балтики»</figcaption>
+          </figure>
+
+          <figure class="work reveal">
+            <div class="work__img"><img src="images/биосфера/image copy 2.png" alt="Биосферы Балтики — листовка 3" loading="lazy" /></div>
+            <figcaption>Листовки для проекта «Биосферы Балтики»</figcaption>
+          </figure>
+
+          <!-- КИБЕР_СИНДИКАТ -->
+          <figure class="work reveal">
+            <div class="work__img"><img src="images/синдикат/image copy 6.png" alt="КИБЕР_СИНДИКАТ — карточка 1" loading="lazy" /></div>
             <figcaption>Карточки для проекта «КИБЕР_СИНДИКАТ»</figcaption>
           </figure>
 
           <figure class="work reveal">
-            <div class="work__img work__img--msze"><span>MSZE</span></div>
+            <div class="work__img"><img src="images/синдикат/image copy 7.png" alt="КИБЕР_СИНДИКАТ — карточка 2" loading="lazy" /></div>
+            <figcaption>Карточки для проекта «КИБЕР_СИНДИКАТ»</figcaption>
+          </figure>
+
+          <figure class="work reveal">
+            <div class="work__img"><img src="images/синдикат/image copy 8.png" alt="КИБЕР_СИНДИКАТ — карточка 3" loading="lazy" /></div>
+            <figcaption>Карточки для проекта «КИБЕР_СИНДИКАТ»</figcaption>
+          </figure>
+
+          <figure class="work reveal">
+            <div class="work__img"><img src="images/синдикат/image copy 9.png" alt="КИБЕР_СИНДИКАТ — карточка 4" loading="lazy" /></div>
+            <figcaption>Карточки для проекта «КИБЕР_СИНДИКАТ»</figcaption>
+          </figure>
+
+          <figure class="work reveal">
+            <div class="work__img"><img src="images/синдикат/image copy 10.png" alt="КИБЕР_СИНДИКАТ — карточка 5" loading="lazy" /></div>
+            <figcaption>Карточки для проекта «КИБЕР_СИНДИКАТ»</figcaption>
+          </figure>
+
+          <!-- MSZE -->
+          <figure class="work reveal">
+            <div class="work__img"><img src="images/msze/image copy 11.png" alt="MSZE — буклет 1" loading="lazy" /></div>
             <figcaption>Буклет для магазина «MSZE»</figcaption>
           </figure>
+
+          <figure class="work reveal">
+            <div class="work__img"><img src="images/msze/image copy 12.png" alt="MSZE — буклет 2" loading="lazy" /></div>
+            <figcaption>Буклет для магазина «MSZE»</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AI VIDEO ============ -->
+    <section class="terezi section" id="terezi">
+      <div class="container">
+        <p class="section__eyebrow">Нейросети</p>
+        <h2 class="section__title">AI-Видео</h2>
+
+        <div class="terezi__grid reveal">
+          <!-- Левая сторона: фото + розовая стрелка + видео -->
+          <div class="terezi__demo">
+            <div class="terezi__photo-wrap">
+              <img src="images/ai-demo-photo.jpg" alt="Исходное изображение" class="terezi__photo" loading="lazy" />
+              <span class="terezi__label">Изображение</span>
+            </div>
+
+            <!-- Розовая стрелка -->
+            <div class="terezi__arrow">
+              <svg viewBox="0 0 120 60" aria-hidden="true">
+                <defs>
+                  <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#ec4c9c"/>
+                    <stop offset="100%" stop-color="#f06ab0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M5 30 Q60 5 115 30" fill="none" stroke="url(#pinkGrad)" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="8 4"/>
+                <polygon points="115,22 125,30 115,38" fill="#ec4c9c"/>
+              </svg>
+              <span class="terezi__arrow-label">AI-генерация</span>
+            </div>
+
+            <!-- Видео -->
+            <div class="terezi__video-wrap">
+              <video class="terezi__video" controls muted loop playsinline poster="images/ai-demo-photo.jpg">
+                <source src="video/ai-demo.webm" type="video/webm" />
+                <source src="video/ai-demo.mp4" type="video/mp4" />
+              </video>
+              <span class="terezi__label">Видео</span>
+            </div>
+          </div>
+
+          <!-- Правая сторона: текст + ссылки -->
+          <div class="terezi__info">
+            <h3 class="terezi__heading">Создаю качественное видео по&nbsp;любому изображению</h3>
+            <p class="terezi__desc">
+              С помощью нейросетей я превращаю статичные изображения в живые, динамичные видео.
+              Одно фото — и через несколько минут у вас готовый ролик для соцсетей, рекламы или презентации.
+              Работаю с Runway, Kling, Sora, Google Veo и другими инструментами.
+            </p>
+
+            <ul class="terezi__links">
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <a href="#" target="_blank" rel="noopener">Как нейросети меняют создание видео — статья на VC.ru</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <a href="#" target="_blank" rel="noopener">Топ-5 нейросетей для генерации видео в 2026</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <a href="#" target="_blank" rel="noopener">Кейс: как я сделала 30 рилс за неделю через AI</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <a href="#" target="_blank" rel="noopener">От фото к видео: пошаговый гайд по Runway Gen-3</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <a href="#" target="_blank" rel="noopener">Sora vs Kling vs Runway: сравнение AI-видео платформ</a>
+              </li>
+            </ul>
+
+            <a href="#contact" class="btn btn--primary">
+              Хочу такое видео
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -301,6 +480,7 @@
         <a href="#about">Обо мне</a>
         <a href="#services">Услуги</a>
         <a href="#portfolio">Портфолио</a>
+        <a href="#terezi">AI-Видео</a>
         <a href="#process">Этапы работы</a>
         <a href="#contact">Контакты</a>
       </nav>
